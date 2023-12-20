@@ -9,12 +9,15 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class Main extends Application {
+public class BlogsMain extends Application {
+
+    public static void main(String[] args) {
+        launch(args);
+    }
     double x,y = 0;
     @Override
-    public void start(Stage primaryStage) throws Exception {
-
-        Parent root = FXMLLoader.load(getClass().getResource("NFT-page.fxml"));
+    public void start(Stage primaryStage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("blog.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
 //        primaryStage.setScene(new Scene(root, 800, 500));
 //        primaryStage.show();
@@ -34,8 +37,4 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
