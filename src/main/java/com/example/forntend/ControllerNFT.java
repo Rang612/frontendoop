@@ -14,10 +14,7 @@ import javafx.util.Duration;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
-
-    @FXML
-    private Pane Exit;
+public class ControllerNFT implements Initializable {
 
     @FXML
     private Label Menu;
@@ -31,10 +28,6 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        Exit.setOnMouseClicked(event -> {
-            System.exit(0);
-        });
 
         slider.setTranslateX(-176);
         Menu.setOnMouseClicked(event -> {
