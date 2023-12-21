@@ -172,7 +172,7 @@
                                     </MenuItem>
                                  </items>
                                       </MenuButton>
-                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="212.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BACK" textFill="#110f0f">
+                                      <Button fx:id="backButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="212.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BACK" textFill="#110f0f">
                                           <font>
                                               <Font name="System Bold" size="15.0" />
                                           </font>
@@ -223,15 +223,15 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane layoutX="21.0" layoutY="193.0" prefHeight="119.0" prefWidth="128.0" style="-fx-background-color: #F7ABAD;">
+                  <Pane layoutX="21.0" layoutY="226.0" prefHeight="86.0" prefWidth="119.0" style="-fx-background-color: #F7ABAD;">
                      <children>
-                        <Button layoutX="25.0" layoutY="42.0" mnemonicParsing="false" onAction="#switchToNFT" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
-                        <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="55.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToNFT" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
+                        <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="44.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="file:/D:/forntend/src/main/java/com/example/forntend/image/nft.png" />
                            </image>
                         </ImageView>
-                        <Label contentDisplay="CENTER" layoutX="38.0" layoutY="94.0" prefHeight="22.0" prefWidth="65.0" text="FLOORNFT" textFill="#030303">
+                        <Label contentDisplay="CENTER" layoutX="27.0" layoutY="56.0" prefHeight="22.0" prefWidth="65.0" text="FLOORNFT" textFill="#030303">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>

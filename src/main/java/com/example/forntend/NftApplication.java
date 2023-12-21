@@ -17,7 +17,7 @@ public class NftApplication extends Application {
     double x,y = 0;
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("blog.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
 //        primaryStage.setScene(new Scene(root, 800, 500));
 //        primaryStage.show();

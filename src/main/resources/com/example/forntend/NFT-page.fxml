@@ -56,8 +56,6 @@
       </TableView>
       <HBox layoutY="158.0" prefHeight="24.0" prefWidth="234.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="58.0" styleClass="button3" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="1h" />
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="58.0" styleClass="button3" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="6h" />
             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="58.0" styleClass="button3" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="1d" />
             <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="58.0" styleClass="button3" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="7d" />
          </children>
@@ -229,7 +227,7 @@
                         </MenuItem>
                      </items>
                   </MenuButton>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="212.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BACK" textFill="#110f0f">
+                  <Button fx:id="backButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="212.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BACK" textFill="#110f0f">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
