@@ -7,18 +7,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.IOException;
-
-public class TwitterMain extends Application {
+public class HomeApplication extends Application {
     double x,y = 0;
     @Override
-    public void start(Stage primaryStage) throws Exception {
-
-        Parent root = FXMLLoader.load(getClass().getResource("Twitter.fxml"));
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-//        primaryStage.setScene(new Scene(root, 800, 500));
-//        primaryStage.show();
-
 
         root.setOnMousePressed(event -> {
             x = event.getSceneX();

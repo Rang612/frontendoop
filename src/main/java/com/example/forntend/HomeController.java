@@ -18,9 +18,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ControllerBlogs implements Initializable {
+public class HomeController implements Initializable {
+
     @FXML
     private Button Exit;
+
+    @FXML
+    private Button Exit1;
 
     @FXML
     private Label Menu;
@@ -30,13 +34,18 @@ public class ControllerBlogs implements Initializable {
 
     @FXML
     private Pane slider;
+
+
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void initialize(URL location, ResourceBundle resources) {
 
         Exit.setOnMouseClicked(event -> {
             System.exit(0);
         });
 
+        Exit1.setOnMouseClicked(event -> {
+            System.exit(0);
+        });
         slider.setTranslateX(-176);
         Menu.setOnMouseClicked(event -> {
             TranslateTransition slide = new TranslateTransition();
@@ -70,23 +79,25 @@ public class ControllerBlogs implements Initializable {
             });
         });
     }
-    private Stage stage;
-    private Scene scene;
 
-    public void switchToHome(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-    public void switchToBlog(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("blog.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
+
+        private Stage stage;
+        private Scene scene;
+
+        public void switchToHome(ActionEvent event) throws IOException {
+            Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+        public void switchToBlog(ActionEvent event) throws IOException {
+            Parent root = FXMLLoader.load(getClass().getResource("blog.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
 
     public void switchToTwitter(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Twitter.fxml"));
@@ -104,3 +115,4 @@ public class ControllerBlogs implements Initializable {
         stage.show();
     }
 }
+

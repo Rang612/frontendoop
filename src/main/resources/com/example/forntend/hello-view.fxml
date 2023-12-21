@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forntend.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forntend.HomeController">
     <children>
         <BorderPane layoutX="200.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
@@ -32,6 +32,16 @@
                                         <Font name="System Bold" size="16.0" />
                                     </font>
                                 </Label>
+                        <Pane layoutX="783.0" layoutY="-5.0" prefHeight="39.0" prefWidth="27.0">
+                           <children>
+                              <Button fx:id="Exit1" layoutX="-9.0" layoutY="4.0" mnemonicParsing="false" opacity="0.61" prefHeight="14.0" prefWidth="26.0" style="-fx-background-color: #EE0914;" />
+                              <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="-4.0" layoutY="10.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/forntend/src/main/java/com/example/forntend/image/exit%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
                             </children></Pane>
                         <HBox layoutX="320.0" layoutY="25.0" prefHeight="40.0" prefWidth="280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
                             <children>
@@ -76,7 +86,7 @@
                      <children>
                               <VBox layoutY="91.0" prefHeight="282.0" prefWidth="156.0">
                                   <children>
-                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="218.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="HOME" textFill="#110f0f">
+                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="38.0" prefWidth="218.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="HOME" textFill="#110f0f">
                                           <font>
                                               <Font name="System Bold" size="15.0" />
                                           </font>
@@ -88,7 +98,7 @@
                                               </ImageView>
                                           </graphic>
                                       </Button>
-                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="223.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="TWITTER" textFill="#110f0f">
+                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToTwitter" prefHeight="38.0" prefWidth="223.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="TWITTER" textFill="#110f0f">
                                           <font>
                                               <Font name="System Bold" size="15.0" />
                                           </font>
@@ -100,7 +110,7 @@
                                               </ImageView>
                                           </graphic>
                                       </Button>
-                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="239.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BLOGS" textFill="#110f0f">
+                                      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToBlog" prefHeight="38.0" prefWidth="239.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="BLOGS" textFill="#110f0f">
                                           <font>
                                               <Font name="System Bold" size="15.0" />
                                           </font>
@@ -112,7 +122,7 @@
                                               </ImageView>
                                           </graphic>
                                       </Button>
-                                      <MenuButton alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="221.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="FLOORNFT" textFill="#110f0f">
+                                      <MenuButton alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToNFT" prefHeight="38.0" prefWidth="221.0" styleClass="button1" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" text="FLOORNFT" textFill="#110f0f">
                                           <font>
                                               <Font name="System Bold" size="15.0" />
                                           </font>
@@ -186,7 +196,7 @@
                <children>
                   <Pane layoutX="44.0" layoutY="80.0" prefHeight="80.0" prefWidth="105.0" style="-fx-background-color: #F7ABAD;">
                      <children>
-                        <Button layoutX="7.0" layoutY="5.0" mnemonicParsing="false" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
+                        <Button layoutX="7.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToTwitter" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
                         <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="37.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="file:/D:/forntend/src/main/java/com/example/forntend/image/twitter-x-logo.png" />
@@ -198,15 +208,15 @@
                            </font>
                         </Label>
                      </children></Pane>
-                  <Pane layoutX="274.0" layoutY="41.0" prefHeight="119.0" prefWidth="128.0" style="-fx-background-color: #F7ABAD;">
+                  <Pane layoutX="296.0" layoutY="75.0" prefHeight="85.0" prefWidth="113.0" style="-fx-background-color: #F7ABAD;">
                      <children>
-                        <Button layoutX="36.0" layoutY="46.0" mnemonicParsing="false" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
-                        <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="65.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#switchToBlog" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
+                        <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="40.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="file:/D:/forntend/src/main/java/com/example/forntend/image/blog.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="65.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="BLOGS" textAlignment="CENTER" textFill="#030303">
+                        <Label layoutX="40.0" layoutY="56.0" prefHeight="22.0" prefWidth="42.0" text="BLOGS" textAlignment="CENTER" textFill="#030303">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -215,7 +225,7 @@
                   </Pane>
                   <Pane layoutX="21.0" layoutY="193.0" prefHeight="119.0" prefWidth="128.0" style="-fx-background-color: #F7ABAD;">
                      <children>
-                        <Button layoutX="25.0" layoutY="42.0" mnemonicParsing="false" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
+                        <Button layoutX="25.0" layoutY="42.0" mnemonicParsing="false" onAction="#switchToNFT" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
                         <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="55.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="file:/D:/forntend/src/main/java/com/example/forntend/image/nft.png" />
@@ -228,9 +238,9 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane fx:id="Exit" layoutX="318.0" layoutY="233.0" prefHeight="79.0" prefWidth="91.0" style="-fx-background-color: #F7ABAD;">
+                  <Pane layoutX="318.0" layoutY="233.0" prefHeight="79.0" prefWidth="91.0" style="-fx-background-color: #F7ABAD;">
                      <children>
-                        <Button layoutY="5.0" mnemonicParsing="false" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
+                        <Button fx:id="Exit" layoutY="5.0" mnemonicParsing="false" opacity="0.61" prefHeight="70.0" prefWidth="91.0" styleClass="button2" stylesheets="file:/D:/forntend/src/main/java/com/example/forntend/css/view.css" />
                         <Label layoutX="33.0" layoutY="54.0" prefHeight="22.0" prefWidth="26.0" text="EXIT" textAlignment="CENTER" textFill="#030303">
                            <font>
                               <Font name="System Bold" size="12.0" />
