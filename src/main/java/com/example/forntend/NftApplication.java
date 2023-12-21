@@ -9,7 +9,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class BlogsMain extends Application {
+public class NftApplication extends Application {
 
     public static void main(String[] args) {
         launch(args);

@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ControllerBlogs implements Initializable {
+public class NftController implements Initializable {
     @FXML
     private Button Exit;
 
