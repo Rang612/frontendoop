@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #F7ABAD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forntend.NftController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #F7ABAD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.forntend.NftFloorController">
    <children>
       <Pane layoutY="67.0" prefHeight="40.0" prefWidth="373.0">
          <children>
@@ -43,15 +43,17 @@
             </Button>
          </children>
       </Pane>
-      <TableView layoutX="-2.0" layoutY="186.0" prefHeight="310.0" prefWidth="806.0" style="-fx-: #E7697E;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-4.0">
+      <TableView fx:id="view" layoutX="25.0" layoutY="243.0" prefHeight="310.0" prefWidth="806.0" style="-fx-: #E7697E;" AnchorPane.bottomAnchor="-53.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="-31.0">
         <columns>
-          <TableColumn prefWidth="155.0" text="Collections" />
-          <TableColumn prefWidth="96.0" text="Floor Price" />
-            <TableColumn prefWidth="140.0" text="Floor Price Change" />
-            <TableColumn prefWidth="101.0" text="Volume" />
-            <TableColumn prefWidth="113.0" text="Volume Change" />
-            <TableColumn text="Items" />
-            <TableColumn prefWidth="104.0" text="Owners" />
+          <TableColumn fx:id="idcol" prefWidth="155.0" text="Id" />
+          <TableColumn fx:id="namecol" prefWidth="96.0" text="Name" />
+            <TableColumn fx:id="totalSupplycol" prefWidth="140.0" text="Total Supply" />
+            <TableColumn fx:id="volumecol" prefWidth="101.0" text="Volume" />
+            <TableColumn fx:id="volumeChangecol" prefWidth="113.0" text="Volume Change" />
+            <TableColumn fx:id="url" text="Url" />
+            <TableColumn fx:id="numOwnerscol" prefWidth="104.0" text="Number Owners" />
+            <TableColumn fx:id="floorPricecol" prefWidth="75.0" text="Floor Price" />
+            <TableColumn fx:id="numOfSalescol" prefWidth="75.0" text="Number Of Sales" />
         </columns>
       </TableView>
       <HBox layoutY="158.0" prefHeight="24.0" prefWidth="234.0">
